@@ -1,0 +1,49 @@
+.Navigation {
+  background-color: pink;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.Navigation.small {
+  grid-template-columns: auto;
+}
+
+.Navigation .brand-container {
+  justify-self: start;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.Navigation .logo-container {
+  background-color: lightcoral;
+  height: 50px;
+  width: 50px;
+}
+
+.Navigation .tabs-container {
+  justify-self: end;
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  width: 100%;
+}
+
+.Navigation .tabs-container.small {
+  justify-self: center;
+}
+
+.Navigation .tab {
+  text-align: center;
+}
+
+.Navigation .selected {
+  color: red;
+}

@@ -1,0 +1,7 @@
+.cover-container {
+  width: 100%;
+}
+
+.cover-container > img {
+  width: 100%;
+}
